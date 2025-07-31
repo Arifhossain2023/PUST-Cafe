@@ -1,0 +1,17 @@
+/* App.css */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}

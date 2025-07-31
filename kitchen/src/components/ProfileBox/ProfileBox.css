@@ -1,0 +1,86 @@
+/* ProfileBox.css */
+.profile-box {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 24px;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 3px solid #f0f0f0;
+}
+
+.profile-box h3 {
+  margin: 10px 0 5px;
+  color: #333;
+  font-size: 18px;
+}
+
+.profile-box p {
+  margin: 0 0 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .profile-box {
+    width: 200px;
+    right: 10px;
+  }
+}

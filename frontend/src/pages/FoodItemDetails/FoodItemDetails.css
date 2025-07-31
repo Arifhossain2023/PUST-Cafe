@@ -1,0 +1,166 @@
+.food-detail-page {
+  max-width: 700px;
+  margin: 100px auto 100px auto;  /* উপরের ফাকা জায়গা বেশি */
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* সব কিছু সেন্টারে */
+}
+
+.food-detail-img {
+  width: 100%;
+  max-width: 500px;   /* ইমেজ ম্যাক্স সাইজ */
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.food-detail-img:hover {
+  transform: scale(1.02);
+}
+
+.food-detail-content {
+  width: 100%;
+  max-width: 700px;  /* মূল কন্টেন্টের max width */
+}
+
+.food-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.food-name {
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+  text-align: left;
+}
+
+.food-status {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+}
+
+.food-status.available {
+  background-color: #28a745;
+}
+
+.food-status.unavailable {
+  background-color: #dc3545;
+}
+
+.food-price {
+  font-size: 18px;
+  font-weight: bold;
+  flex: 1;
+  text-align: right;
+  color: #333;
+}
+
+.food-detail-desc {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Feedback Section */
+
+.food-feedback-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.food-feedback-section h3 {
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 700;
+}
+
+.food-feedback-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.food-feedback-section input,
+.food-feedback-section select,
+.food-feedback-section textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.food-feedback-section input:focus,
+.food-feedback-section select:focus,
+.food-feedback-section textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.food-feedback-section textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.food-feedback-section button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.food-feedback-section button:hover {
+  background-color: #45a049;
+}
+
+.success-msg {
+  margin-top: 15px;
+  color: #28a745;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .food-detail-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .food-name,
+  .food-status,
+  .food-price {
+    flex: none;
+    text-align: center;
+  }
+}

@@ -1,0 +1,17 @@
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.button {
+  cursor: pointer;
+}
+
+/* Optional styling for better layout */
+.billing-page {
+  padding: 20px;
+}
+.billing-page {
+  padding: 20px;
+}

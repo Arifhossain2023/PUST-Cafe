@@ -1,0 +1,82 @@
+.list {
+  padding: 20px 30px 40px 30px; /* top right bottom left */
+  height: 100vh;
+  width: 100vw;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.list h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr 150px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.list-table-format.title {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+}
+
+.list-table-format img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.available-btn,
+.unavailable-btn,
+.remove-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.2s ease;
+}
+
+/* ✅ Available Button */
+.available-btn {
+  background-color: #28a745;
+  color: white;
+}
+.available-btn:hover {
+  background-color: #218838;
+}
+
+/* ❌ Unavailable Button */
+.unavailable-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+.unavailable-btn:hover {
+  background-color: #e0a800;
+}
+
+/* 🗑️ Remove Button */
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+}
+.remove-btn:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,39 @@
+.customer-feedback-admin {
+  max-width: 900px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.customer-feedback-admin h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2980b9;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback-table th,
+.feedback-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.feedback-table thead tr {
+  background-color: #3498db;
+  color: white;
+}
+
+.feedback-table tbody tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+
+.feedback-table tbody tr:hover {
+  background-color: #e6f0ff;
+}

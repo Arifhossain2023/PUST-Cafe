@@ -1,0 +1,85 @@
+/* Orders.css */
+
+.orders-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  color: #222;
+}
+
+.orders-page h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #111;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.order-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 18px 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 30px;
+  align-items: center;
+}
+
+.order-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.order-card div {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.order-card strong {
+  color: #555;
+  font-weight: 700;
+}
+
+.order-card select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #bbb;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #fafafa;
+  color: #444;
+  cursor: pointer;
+  transition: border-color 0.25s ease;
+}
+
+.order-card select:hover {
+  border-color: #007bff;
+}
+
+.order-card select:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .order-card {
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+  }
+}

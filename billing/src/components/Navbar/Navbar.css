@@ -1,0 +1,61 @@
+/* src/components/Navbar/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar .logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-section {
+  margin-left: auto;
+}
+
+.profile-section .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.profile-section .profile:hover {
+  border-color: #4a90e2;
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar h3 {
+    font-size: 1rem;
+  }
+
+  .navbar .logo,
+  .profile-section .profile {
+    height: 35px;
+    width: 35px;
+  }
+}

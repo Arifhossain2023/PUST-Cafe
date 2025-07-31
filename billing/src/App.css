@@ -1,0 +1,18 @@
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #9e7085;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}

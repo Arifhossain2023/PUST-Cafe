@@ -1,0 +1,44 @@
+.pos-kitchen-orders {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-card {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.preparing {
+  background: #ffeeba;
+  color: #856404;
+}
+
+.status.ready {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.food-processing {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status.delivered {
+  background: #e2e3e5;
+  color: #383d41;
+}

@@ -1,0 +1,29 @@
+.shift-notice {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px;
+  background: #f0f8ff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.shift-column {
+  flex: 1;
+}
+
+.shift-column h4 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+}
+
+.shift-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.shift-column li {
+  margin: 5px 0;
+  font-size: 14px;
+}

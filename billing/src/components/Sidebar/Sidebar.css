@@ -1,0 +1,117 @@
+/* Sidebar base */
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  min-height: 100vh;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Menu option */
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+/* Active menu style */
+.sidebar-option.active {
+  background-color: #e0f7fa;
+  color: #00796b;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.sidebar-option:hover {
+  background-color: #f5f5f5;
+}
+
+/* Common icon style */
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.sidebar-option:hover .icon {
+  transform: scale(1.1);
+}
+
+/* Text */
+.sidebar-option p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* ========== Optional Customization Per Icon ========== */
+.add-icon {
+  filter: hue-rotate(120deg);
+}
+
+.order-icon {
+  opacity: 0.9;
+}
+
+.staff-icon {
+  border-radius: 50%;
+}
+
+.inventory-icon {
+  background-color: #f1f1f1;
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.feedback-icon {
+  filter: grayscale(50%);
+}
+
+.loyalty-icon {
+  filter: brightness(1.2);
+}
+
+.report-icon {
+  filter: contrast(1.1);
+}
+
+.table-icon {
+  transform: rotate(0deg);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    padding: 10px 5px;
+  }
+
+  .sidebar-option {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  .sidebar-option p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .sidebar-options {
+    gap: 6px;
+  }
+}

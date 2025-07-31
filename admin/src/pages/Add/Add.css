@@ -1,0 +1,134 @@
+/* Main wrapper */
+.add {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f9fbe7, #e8f5e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Form container - now full width inside max-width */
+.add form {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Smooth entrance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Flex utility */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Labels */
+.add p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Upload image preview */
+.add-img-upload img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px dashed #a5d6a7;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #f1f8e9;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-img-upload img:hover {
+  border-color: #66bb6a;
+  transform: scale(1.01);
+}
+
+/* Inputs */
+.add input,
+.add textarea,
+.add select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fcfcfc;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.add input:focus,
+.add textarea:focus,
+.add select:focus {
+  border-color: #81c784;
+  box-shadow: 0 0 0 3px rgba(129, 199, 132, 0.2);
+  outline: none;
+}
+
+/* Horizontal layout for category and price */
+.add-category-price {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Submit button */
+.add-btn {
+  padding: 14px 0;
+  background-color: #43a047;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .add {
+    padding: 20px 10px;
+  }
+
+  .add form {
+    padding: 25px 20px;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+  }
+
+  .add-img-upload img {
+    max-width: 100%;
+    height: auto;
+  }
+}

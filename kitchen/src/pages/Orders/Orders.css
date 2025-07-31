@@ -1,0 +1,145 @@
+/* ✅ Orders.css */
+
+.kitchen-orders {
+  padding: 70px 20px 20px; /* Added top padding for navbar */
+  background: #f8f8f8;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* ✅ Preparing status yellow background */
+.order-card[style*="Preparing"] {
+  background-color: #fff3cd !important;
+}
+
+.order-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.order-buttons,
+.order-card .edit-btn {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ✅ Common buttons */
+.order-buttons button,
+.edit-btn,
+.add-btn,
+.submit-btn {
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 🟡 Preparing button */
+.order-buttons button:nth-child(1) {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.order-buttons button:nth-child(1):hover {
+  background-color: #e0a800;
+  color: white;
+}
+
+/* ✅ Ready button */
+.order-buttons button:nth-child(2) {
+  background-color: #28a745;
+  color: white;
+}
+
+.order-buttons button:nth-child(2):hover {
+  background-color: #1e7e34;
+}
+
+/* ✏️ Edit Button */
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ➕ Add/Submit Buttons */
+.add-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #138496;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #1e7e34;
+}
+
+/* 🧾 Popup Form */
+.ingredient-popup {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.ingredient-popup h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.ingredient-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.ingredient-row select,
+.ingredient-row input {
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 120px;
+}
+
+/* Section Headings */
+h3 {
+  margin-top: 30px;
+  color: #333;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  font-size: 20px;
+}

@@ -1,0 +1,17 @@
+
+.body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+.sidebar-option.active {
+  background-color: #e0f0ff;
+  font-weight: bold;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}

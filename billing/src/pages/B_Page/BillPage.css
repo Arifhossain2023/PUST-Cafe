@@ -1,0 +1,139 @@
+/* Container styling */
+.bill-container {
+  padding: 40px;
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Bill box */
+.bill-box {
+  background: #fff;
+  width: 100%;
+  max-width: 850px;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section with logo and university info */
+.bill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+/* Logo and quote */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.quote {
+  font-size: 12px;
+  font-style: italic;
+  color: #555;
+}
+
+/* University Info */
+.cafeteria-info {
+  text-align: right;
+}
+
+.cafeteria-info h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #004080;
+}
+
+.cafeteria-info p {
+  margin: 5px 0 0 0;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Table styling */
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bill-table th,
+.bill-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.bill-table th {
+  background-color: #f3f3f3;
+  font-weight: bold;
+}
+
+/* Totals section */
+.bill-totals {
+  margin-top: 25px;
+  text-align: right;
+  font-size: 16px;
+  color: #222;
+}
+
+.bill-totals p,
+.bill-totals h3 {
+  margin: 6px 0;
+}
+
+.bill-totals h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007b5e;
+}
+
+/* Button styles */
+.print-btn {
+  background-color: #0e6ba8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.print-btn:hover {
+  background-color: #084d77;
+}
+
+/* Responsive design */
+@media print {
+  .print-btn {
+    display: none;
+  }
+
+  .bill-container {
+    background: none;
+    padding: 0;
+  }
+
+  .bill-box {
+    box-shadow: none;
+    border: none;
+  }
+}

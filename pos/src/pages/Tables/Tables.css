@@ -1,0 +1,94 @@
+/* Tables.css */
+
+.tables-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  color: #333;
+}
+
+.tables-page h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.table-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.table-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Status color coding */
+
+.table-card.free {
+  border-left: 6px solid #4caf50; /* সবুজ - ফ্রি */
+  color: #2e7d32;
+  background-color: #e8f5e9;
+}
+
+.table-card.reserved {
+  border-left: 6px solid #ff9800; /* কমলা - রিজার্ভড */
+  color: #ef6c00;
+  background-color: #fff3e0;
+}
+
+.table-card.occupied {
+  border-left: 6px solid #f44336; /* লাল - দখলকৃত */
+  color: #c62828;
+  background-color: #ffebee;
+}
+
+.table-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.table-card p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 480px) {
+  .table-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .table-card {
+    padding: 15px;
+  }
+
+  .table-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .table-card p {
+    font-size: 0.9rem;
+  }
+}

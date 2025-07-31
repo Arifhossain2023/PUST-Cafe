@@ -1,0 +1,167 @@
+/* Table.css */
+
+.table-page {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.table-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* ৬ কলাম */
+  grid-template-rows: auto;   /* সারির উচ্চতা অটোমেটিক */
+  gap: 20px;
+}
+
+.table-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.table-card:hover {
+  transform: scale(1.03);
+}
+
+/* Status based colors */
+.table-card.free {
+  border-left: 6px solid #28a745; /* green */
+}
+.table-card.occupied {
+  border-left: 6px solid #dc3545; /* red */
+}
+.table-card.reserved {
+  border-left: 6px solid #ffc107; /* yellow */
+}
+
+/* Reservation Requested button */
+.reservation-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.reservation-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Select dropdown */
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Modal Styles */
+.reservation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  font-size: 1rem;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.modal-content p {
+  margin: 6px 0;
+  color: #444;
+}
+
+/* Buttons inside modal */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accept-btn,
+.reject-btn,
+.close-btn {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.accept-btn {
+  background-color: #28a745;
+}
+
+.accept-btn:hover {
+  background-color: #1e7e34;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+}
+
+.reject-btn:hover {
+  background-color: #a71d2a;
+}
+
+.close-btn {
+  background-color: #6c757d;
+}
+
+.close-btn:hover {
+  background-color: #565e64;
+}
+
+
+.reservation-btn {
+  background-color: orange;
+  color: black;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
