@@ -38,7 +38,7 @@ A full-featured cafeteria management system built with the MERN Stack. This incl
 
 ## 📁 Folder Structure
 
-See [`folder-structure.txt`](./Cafeteria Management System_Folder_Structure.txt)
+See [`folder-structure.txt`](./Cafeteria management System_Folder_Structure.txt)
 
 ---
 
