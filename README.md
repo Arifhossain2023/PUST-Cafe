@@ -1,8 +1,13 @@
-# PUST Cafeteria Management System
+# PUST Cafe Management System
 
-A full-featured cafeteria system built for PUST using React, Node.js, and MongoDB.
+### Developed by: Arif Hossain  
+**Department of ICE, PUST**
 
-## Features
+---
+
+##  Project Overview
+
+A full-featured cafeteria management system built with the MERN Stack. This includes:
 
 - Table Reservation System, Food Orders Dine in or Home Delevery
 - Kitchen Panel with Ingredient Tracking
@@ -11,11 +16,48 @@ A full-featured cafeteria system built for PUST using React, Node.js, and MongoD
 - Billing Panel with PDF Download, Manual Mobile pay
 - Role-Based Authentication (Admin, Waiter, Kitchen, Cashier)
 
-## Tech Stack
+##  Technologies Used
 
-- Frontend: React, CSS
-- Backend: Node.js, Express.js
-- Database: MongoDB (via Mongoose)
+- **Frontend**: React.js, Tailwind CSS, Vite
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: Role-based login with JWT
+- **UI Libraries**: Toastify, ShadCN, Lucide Icons
+
+---
+
+##  Modules
+
+- **POS Panel (Waiter)**
+- **Kitchen Panel**
+- **Admin Panel**
+- **Billing Panel**
+- **Backend (API + DB)**
+
+---
+
+## 📁 Folder Structure
+
+See [`folder-structure.txt`](./Cafeteria Management System_Folder_Structure.txt)
+
+---
+
+## 🚀 Features
+
+- Place order (dine-in/home)
+- Table selection & availability
+- Kitchen 'Ready' with inventory usage
+- Admin reports, staff, food management
+- Billing with real-time PDF generation
+
+## 📬 Contact
+
+Email: arif.190612@s.pust.ac.bd  
+GitHub: [@Arifhossain2023](https://github.com/Arifhossain2023)
+
+---
+
+_Thanks for visiting!_
 
 ##  Run Locally
 
