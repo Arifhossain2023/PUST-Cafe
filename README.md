@@ -1,4 +1,4 @@
-# PUST Cafe Management System
+# PUST Cafeteria Management System
 
 ### Developed by: Arif Hossain  
 **Department of ICE, PUST**
@@ -36,22 +36,6 @@ A full-featured cafeteria management system built with the MERN Stack. This incl
 
 ---
 
-## 📁 Folder Structure
-
-
-> 📄 See [`Cafeteria Management System_Folder_Structure.txt`](./Cafeteria%20Management%20System_Folder_Structure.txt) for full structure.
-
----
-
----
-
-## 🚀 Features
-
-- Place order (dine-in/home)
-- Table selection & availability
-- Kitchen 'Ready' with inventory usage
-- Admin reports, staff, food management
-- Billing with real-time PDF generation
 
 ## 📬 Contact
 
