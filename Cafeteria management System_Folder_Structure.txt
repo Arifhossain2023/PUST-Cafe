@@ -1,0 +1,146 @@
+Cafeteria management System/
+│
+├── 📁 backend/
+│   ├── 📁 config/
+│   │   └── bd.js
+│   ├── 📁 controllers/
+│   │   ├── authController.js
+│   │   ├── foodController.js
+│   │   ├── orderController.js
+│   │   ├── userController.js
+│   │   ├── tableController.js
+│   │   ├── inventoryController.js
+│   │   ├── feedbackController.js
+│   │   ├── cartController.js
+│   │   ├── loyaltyController.js
+│   │   ├── reportController.js
+│   │   ├── staffController.js 
+│   │   └── ... (other entities)         
+│   ├── 📁 middleware/
+│   │   ├── auth.js
+│   │   └── authMiddleware.js  
+│   ├── 📁 models/
+│   │   ├── authModel.js
+│   │   ├── orderModel.js
+│   │   ├── userModel.js
+│   │   ├── tableModel.js
+│   │   ├── inventoryModel.js
+│   │   ├── feedbackModel.js
+│   │   ├── loyaltyModel.js
+│   │   ├── staffModel.js
+│   │   └── ... (other entities)
+│   ├── 📁 routes/
+│   │   ├── authRoute.js
+│   │   ├── foodRoute.js
+│   │   ├── orderRoute.js
+│   │   ├── userRoute.js
+│   │   ├── tableRoute.js
+│   │   ├── inventoryRoute.js
+│   │   ├── feedbackRoute.js
+│   │   ├── authRoute.js
+│   │   ├── kitchenRoute.js
+│   │   ├── loyaltyRoute.js
+│   │   ├── reportRoute.js
+│   │   ├── staffRoute.js
+│   │   └── ... (other entities)
+│   ├── 📁 uploads/
+│   ├── 📄 .env
+│   └── 📄 server.js
+│
+├── 📁 frontend/
+│   └── src/
+│       ├── 📁 assets/
+│       ├── 📁 components/
+│       │   ├── Ad/
+│       │   ├── ExploreMenu/
+│       │   ├── FoodDisplay/
+│       │   ├── FoodItem/
+│       │   ├── Footer/
+│       │   ├── Header/
+│       │   ├── Header/
+│       │   ├── LoginPopup/
+│       │   └── Navbar/
+│       ├── 📁 context/
+│       │   └── StoreContext.jsx
+│       ├── 📁 pages/
+│       │   ├── Home/
+│       │   ├── Login/
+│       │   ├── Cart/
+│       │   ├── PlaceOrder/
+│       │   ├── foodItemDetail/   
+│       │   ├── UserTabls/      
+│       │   ├── MyOrders/
+│       │   ├── Verify/
+│       │   ├── About/
+│       │   ├── Feedback/
+│       │   └── Loyalty/
+│       ├── App.jsx
+│       ├── index.css
+│       └── main.jsx
+│
+├── 📁 admin/
+│   └── src/
+│       ├── 📁 assets/
+│       │   └── assets.js/
+│       ├── 📁 components/
+│       │   ├──Auth/   
+│       │   ├── Navbar/
+│       │   └── Sidebar/
+│       ├── 📁 pages/
+│       │   ├── Add/   
+│       │   ├── CustomerFeedback/  
+│       │   ├── List/
+│       │   ├── Orders/   
+│       │   ├── Table/   
+│       │   ├── Inventory/
+│       │   ├── Staff/  
+│       │   ├── LoyaltyPoints/  
+│       │   └── Reports/  
+│       ├── App.jsx
+│       ├── index.css
+│       └── main.jsx
+│
+├── 📁 pos/
+│   └── src/
+│       ├── 📁 assets/
+│       ├── 📁 components/
+│       │   ├──Auth/    
+│       │   ├──Sidebar/
+│       │   └── Navbar/
+│       ├── 📁 pages/
+│       │   ├── Menu/   
+│       │   ├── Cart/   
+│       │   ├── Kitchen/ 
+│       │   ├── Orders/   
+│       │   └── Tables/  
+│       ├── App.jsx
+│       ├── index.css
+│       └── main.jsx
+│
+├── 📁 kitchen/
+│   └── src/
+│       ├── 📁 assets/
+│       ├── 📁 components/
+│       │   ├──Auth/  
+│       │   ├──Sidebar/
+│       │   ├──ShiftNotice/ShiftNotice.jsx
+│       │   └── Navbar/
+│       ├── 📁 pages/
+│       │   └── Orders/    
+│       ├── App.jsx
+│       ├── index.css
+│       └── main.jsx
+│
+├── 📁 billing/
+│   └── src/
+│       ├── 📁 assets/
+│       ├── 📁 components/
+│       │   ├──Auth/    
+│       │   └── Navbar/
+│       ├── 📁 pages/
+│       │   └── Bills/  
+│       │   └── BillPage/  
+│       ├── App.jsx
+│       ├── index.css
+|       └── main.jsx
+
