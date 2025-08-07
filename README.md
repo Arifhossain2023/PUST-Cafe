@@ -27,17 +27,17 @@ A full-featured cafeteria management system built with the MERN Stack. This incl
 ---
 
 ##  Modules
-
+- **Frontend Panel (User)**
 - **POS Panel (Waiter)**
-- **Kitchen Panel**
+- **Kitchen Panel(Chef)**
 - **Admin Panel**
-- **Billing Panel**
+- **Billing Panel(Cashier)**
 - **Backend (API + DB)**
 
 ---
 
 
-## 📬 Contact
+##  Contact
 
 Email: arif.190612@s.pust.ac.bd  
 GitHub: [@Arifhossain2023](https://github.com/Arifhossain2023)
